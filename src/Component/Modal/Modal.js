@@ -18,7 +18,7 @@ class Modal extends Component {
   }
 
   handleKeyDown = (e) => {
-    if (e.code === " Escape") {
+    if (e.code === "Escape") {
       this.props.onBackdrop();
     }
   };
@@ -31,6 +31,7 @@ class Modal extends Component {
 
   render() {
     const { content } = this.props;
+    console.log(content);
     return (
       <div className={s.Overlay} onClick={this.handleBackdropClick}>
         <div className={s.Modal}>
